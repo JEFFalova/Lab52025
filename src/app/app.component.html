@@ -12,7 +12,9 @@
 </h1>
 
 <ol>
+  <!-- The *ngFor directive iterates over the 'students' array -->
   <li *ngFor=" let x of students">
+     <!-- Display the name of each student in the list -->
     {{x.name}}
   </li>
 </ol>
@@ -21,7 +23,9 @@
   Weather in Galway
 </h1>
 <ol>
+   <!-- The *ngFor directive iterates over the 'weather' array -->
   <li *ngFor = "let x of weather">
+     <!-- Display the 'main' weather condition for each item in the weather array -->
     {{x.main}}
   </li>
 </ol>
@@ -29,6 +33,7 @@
 @for(w of weather; track w)
 {
   <p>
+    <!-- Display main weather condition and description -->
     {{w.main}} - {{w.description}}
   </p>
 }
